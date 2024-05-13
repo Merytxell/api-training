@@ -9,6 +9,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Arrays;
+import java.util.List;
+
 @SpringBootApplication
 public class ApiTrainingsApplication implements CommandLineRunner {
 
@@ -41,5 +44,9 @@ public class ApiTrainingsApplication implements CommandLineRunner {
 		trainingRepository.save(new Training(null,"Linux", "adoptez un pingouin", 2500, 1, informatique));
 		trainingRepository.save(new Training(null,"Windows Server", "prise en main d'active directory", 3000, 1, informatique));
 		trainingRepository.save(new Training(null,"Powershell", "automatisation des tâches : comment gagner du temps", 2000, 1, informatique));
+
+
 	}
+
+
 }

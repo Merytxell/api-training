@@ -1,5 +1,6 @@
 package fr.fms.apitrainings.dao;
 
+import fr.fms.apitrainings.entities.Category;
 import fr.fms.apitrainings.entities.Training;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -15,6 +16,7 @@ import java.util.List;
 //@RepositoryRestResource
 @Repository
 public interface TrainingRepository extends JpaRepository <Training, Long> {
+    List<Training> findByCategory(Category category);
 //    public List <Training> findAll();
 
 }
